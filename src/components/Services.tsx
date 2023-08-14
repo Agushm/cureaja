@@ -82,7 +82,7 @@ const Services = (props: any) => {
                   {/* <!-- List --> */}
                   <ul role="list" className="mb-8 space-y-4 text-left">
                     {service.benefits.map((benefit: any, index: number) => (
-                      <li className="flex items-center space-x-3">
+                      <li key={index} className="flex items-center space-x-3">
                         <svg
                           className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
                           fill="currentColor"
