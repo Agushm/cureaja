@@ -8,12 +8,9 @@ import Footer from "@/components/footer";
 import PopupWidget from "@/components/PopupWidget";
 import Services from "@/components/Services";
 import Carousel from "@/components/Carousel";
+import Container from "@/components/containers/Container";
+import Image from "next/image";
 export default function Home() {
-  const images = [
-    '/img/banner1.jpg',
-    '/img/banner2.jpg',
-    'https://via.placeholder.com/800x400?text=Slide%203',
-  ];
   return (
     <>
       <Navbar />
@@ -26,9 +23,7 @@ export default function Home() {
         anda merupakan Investasi untuk Hidup Sehat Secara Fisik dan Mental.
       </SectionTitle>
       <Features />
-      <div className="flex justify-center items-center h-screen">
-        <Carousel images={images} />
-      </div>
+      <Carousel />
       <Services />
       <SectionTitle
         pretitle="Ahli Gizi Cureaja"

@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import Container from "./containers/Container";
 import SectionTitle from "./SectionTitle";
 
 const Services = (props: any) => {
@@ -64,6 +63,7 @@ const Services = (props: any) => {
           <div className="mx-4 space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
             {services.map((service: any, index: number) => (
               <div
+              key={index}
                 onClick={handleSelectService}
                 className="flex flex-col justify-between p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white hover:shadow-xl"
               >

@@ -274,7 +274,7 @@ const Features = (props: any) => {
     <div className="py-8 px-8 mx-auto max-w-screen-xl sm:py-4 sm:px-4 lg:px-6">
       <div className="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-4 md:gap-12 md:space-y-0 justify-center ">
         {benefits.map((benefit, index) => (
-          <div className="px-6 py-10 hover:shadow-xl dark:shadow-gray-800 dark:hover:shadow-gray-700 transition duration-500 rounded-2xl bg-white dark:bg-slate-900">
+          <div key={index} className="px-6 py-10 hover:shadow-xl dark:shadow-gray-800 dark:hover:shadow-gray-700 transition duration-500 rounded-2xl bg-white dark:bg-slate-900">
             <div className="w-full p-4 bg-orange-200 flex justify-center items-center mb-4 rounded-full dark:bg-primary-900">
               {benefit.icon}
             </div>
