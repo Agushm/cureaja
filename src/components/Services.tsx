@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import SectionTitle from "./SectionTitle";
+import openWhatsApp from "@/utils/OpenWhatsapp";
 
 const Services = (props: any) => {
   const services = [
@@ -50,7 +51,9 @@ const Services = (props: any) => {
     },
   ];
 
-  const handleSelectService = () => {};
+  const handleSelectService = (title:string) => {
+    openWhatsApp(`Halo Kak Saya ingin Daftar Layanan *${title}* , Bagimana Caranya ya Kak ??`)
+  };
   return (
     <>
       <section id="Layanan" className="">
@@ -62,9 +65,9 @@ const Services = (props: any) => {
           </SectionTitle>
           <div className="mx-4 space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
             {services.map((service: any, index: number) => (
-              <div
+              <button
               key={index}
-                onClick={handleSelectService}
+                onClick={()=>handleSelectService(service.title)}
                 className="flex flex-col justify-between p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white shadow shadow-md hover:shadow-xl"
               >
                 <div>
@@ -103,7 +106,7 @@ const Services = (props: any) => {
                 <a className="text-base text-white bg-orange-500 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-primary-900">
                   Gabung Sekarang
                 </a>
-              </div>
+              </button>
             ))}
           </div>
         </div>
