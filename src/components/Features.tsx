@@ -1,5 +1,6 @@
 import React from "react";
 import Container from "./containers/Container";
+import SectionTitle from "./SectionTitle";
 
 const Features = (props: any) => {
   const benefits = [
@@ -271,21 +272,33 @@ const Features = (props: any) => {
     },
   ];
   return (
-    <div className="py-8 px-8 mx-auto max-w-screen-xl sm:py-4 sm:px-4 lg:px-6">
-      <div className="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-4 md:gap-12 md:space-y-0 justify-center ">
-        {benefits.map((benefit, index) => (
-          <div key={index} className="px-6 py-10 hover:shadow-xl dark:shadow-gray-800 dark:hover:shadow-gray-700 transition duration-500 rounded-2xl bg-white dark:bg-slate-900">
-            <div className="w-full p-4 bg-orange-200 flex justify-center items-center mb-4 rounded-full dark:bg-primary-900">
-              {benefit.icon}
+    <section id="Keunggulan Kami">
+      <SectionTitle
+        pretitle="Keunggulan Cureaja"
+        title=" Mengapa Memilih Kami?"
+      >
+        Kami Percaya bahwa Pengalaman dan Kesabaran dalam Pilihan Program Diet
+        anda merupakan Investasi untuk Hidup Sehat Secara Fisik dan Mental.
+      </SectionTitle>
+      <div className="py-8 px-8 mx-auto max-w-screen-xl sm:py-4 sm:px-4 lg:px-6">
+        <div className="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-4 md:gap-12 md:space-y-0 justify-center ">
+          {benefits.map((benefit, index) => (
+            <div
+              key={index}
+              className="px-6 py-10 hover:shadow-xl dark:shadow-gray-800 dark:hover:shadow-gray-700 transition duration-500 rounded-2xl bg-white dark:bg-slate-900"
+            >
+              <div className="w-full p-4 bg-orange-200 flex justify-center items-center mb-4 rounded-full dark:bg-primary-900">
+                {benefit.icon}
+              </div>
+              <h3 className="mb-2 text-xl font-bold text-black dark:text-white">
+                {benefit.title}
+              </h3>
+              <p className="text-gray-500 dark:text-gray-400">{benefit.desc}</p>
             </div>
-            <h3 className="mb-2 text-xl font-bold text-black">
-              {benefit.title}
-            </h3>
-            <p className="text-gray-500 dark:text-gray-400">{benefit.desc}</p>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 

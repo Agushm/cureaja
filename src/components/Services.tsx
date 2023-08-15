@@ -53,7 +53,7 @@ const Services = (props: any) => {
   const handleSelectService = () => {};
   return (
     <>
-      <section id="services" className="">
+      <section id="Layanan" className="">
         <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
           <SectionTitle pretitle="Layanan Cureaja" title="Coba Layanan Kami">
             Kami Percaya bahwa Pengalaman dan Kesabaran dalam Pilihan Program
@@ -65,7 +65,7 @@ const Services = (props: any) => {
               <div
               key={index}
                 onClick={handleSelectService}
-                className="flex flex-col justify-between p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white hover:shadow-xl"
+                className="flex flex-col justify-between p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white shadow shadow-md hover:shadow-xl"
               >
                 <div>
                   <h3 className="mb-4 text-2xl font-semibold">

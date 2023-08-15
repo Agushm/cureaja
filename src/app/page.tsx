@@ -1,7 +1,7 @@
 import Navbar from "../components/navbar/Navbar";
 import Hero from "../components/hero/Hero";
 import SectionTitle from "../components/SectionTitle";
-import Testimonials from "@/components/testimonials";
+import Testimonials from "@/components/Talent";
 import Features from "@/components/Features";
 import Faq from "@/components/faq";
 import Footer from "@/components/footer";
@@ -10,35 +10,20 @@ import Services from "@/components/Services";
 import Carousel from "@/components/Carousel";
 import Container from "@/components/containers/Container";
 import Image from "next/image";
+import Cta from "@/components/Cta";
+import Goals from "@/components/Goals";
 export default function Home() {
   return (
     <>
       <Navbar />
       <Hero />
-      <SectionTitle
-        pretitle="Keunggulan Cureaja"
-        title=" Mengapa Memilih Kami?"
-      >
-        Kami Percaya bahwa Pengalaman dan Kesabaran dalam Pilihan Program Diet
-        anda merupakan Investasi untuk Hidup Sehat Secara Fisik dan Mental.
-      </SectionTitle>
       <Features />
       <Carousel />
       <Services />
-      <SectionTitle
-        pretitle="Ahli Gizi Cureaja"
-        title="Praktisi Kesehatan Profesional"
-      >
-        Langkah awal untuk hidup sehat yaitu dengan menjaga pola makan dan
-        kebiasaan makan yang baik dan benar
-      </SectionTitle>
       <Testimonials />
-      <SectionTitle pretitle="FAQ" title="Frequently Asked Questions">
-        Answer your customers possible questions here, it will increase the
-        conversion rate as well as support or chat requests.
-      </SectionTitle>
-      <Faq />
-      {/* <Cta /> */}
+      <Goals/>
+      {/* <Faq /> */}
+      <Cta />
       <Footer />
       <PopupWidget />
     </>
