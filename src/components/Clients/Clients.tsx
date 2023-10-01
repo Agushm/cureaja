@@ -13,7 +13,7 @@ const Clients = () => {
           <img
             src="/img/brands/microsoft.svg"
             alt="logo microsoft"
-            className="mx-6 w-96  "
+            className="mx-6 w-96 fill-white"
           />
 
           <img

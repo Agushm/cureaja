@@ -8,8 +8,8 @@ const Hero2 = () => {
   return (
     <>
       <Container>
-        <div className="flex flex-col h-screen md:flex-row">
-          <div className="w-full md:w-1/2 my-auto ">
+        <div className="flex flex-col md:h-screen md:flex-row">
+          <div className="w-full md:w-1/2 my-5 md:my-auto ">
             <h1 className="text-xl md:text-6xl font-medium mb-5 md:mb-10">
               <span className="text-orange-500">Program </span>Diet Sehat
               Dipandu <span className="text-orange-500">Ahli Gizi</span>

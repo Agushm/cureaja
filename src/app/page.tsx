@@ -16,23 +16,27 @@ import Goals from "@/components/Goals";
 import BestSeller from "@/components/BestSeller/BestSeller";
 import Clients from "@/components/Clients/Clients";
 import Statistik from "@/components/Statistik/Statistik";
+import Products from "@/components/Products/Products";
+import Article from "@/components/Article/Article";
+
 export default function Home() {
   return (
     <>
       <Navbar />
       <Hero2 />
       <BestSeller/>
-      
+      <Products/>
       <Clients/>
       <Statistik/>
+      <Article/>
       {/* <Features />
       <Carousel />
       <Services />
       <Testimonials />
       <Goals/> */}
       {/* <Faq /> */}
-      {/* <Cta />
-      <Footer /> */}
+    {/* <Cta /> */}
+      <Footer />
       {/* <PopupWidget /> */}
     </>
   );
