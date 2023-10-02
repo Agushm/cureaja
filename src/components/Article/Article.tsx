@@ -36,7 +36,7 @@ const Article = () => {
         <div className="my-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
           {data.map((item, index) => {
             return (
-              <div className="group relative">
+              <div key={index} className="group relative">
                 <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-xl bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-50">
                   <img
                     src={item.src}
